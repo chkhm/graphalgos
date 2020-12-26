@@ -1,0 +1,104 @@
+
+{ 
+    "name": "testgraph",
+    "nodes": [
+        {
+            "name": "A",
+            "weight": "15",
+            "labels": [
+                { "color": "blue" },
+                { "ord": "1" }
+            ]
+        },
+        {
+            "name": "B",
+            "weight": "3",
+            "labels": [
+                { "color": "red" },
+                { "ord": "2" }
+            ]
+        },
+        {
+            "name": "C",
+            "labels": [
+                { "ord": "3" }
+            ]
+        },
+        {
+            "name": "D",
+            "labels": [
+                { "color": "green" },
+                { "ord": "4" }
+            ]
+        },
+        {
+            "labels": [],
+            "name": "E"
+        },
+        {
+            "name": "F"
+        }
+    ],
+    "edges": [
+        {
+            "name": "1",
+            "weight": "7",
+            "n1": "A",
+            "n2": "B",
+            "bidirectional": "true",
+            "labels": [
+                { "color": "green" },
+                { "ord": "4" },
+                { "width": "3" }
+            ]
+        },
+        {
+            "name": "2",
+            "weight": "3",
+            "n1": "B",
+            "n2": "C",
+            "bidirectional": "false",
+            "labels": [
+                { "color": "red" },
+                { "style": "dotted" },
+                { "width": "3" }
+            ]
+        },
+        {
+            "name": "3",
+            "weight": "9",
+            "n1": "C",
+            "n2": "D"
+        },
+        {
+            "name": "4",
+            "weight": "17",
+            "n1": "C",
+            "n2": "A"
+        },
+        {
+            "name": "4",
+            "weight": "1",
+            "n1": "D",
+            "n2": "A"
+        },
+        {
+            "name": "5",
+            "weight": "9",
+            "n1": "C",
+            "n2": "E"
+        },
+        {
+            "name": "6",
+            "weight": "1",
+            "n1": "D",
+            "n2": "E"
+        },
+        {
+            "name": "6",
+            "weight": "1",
+            "n1": "E",
+            "n2": "A"
+        }
+    ]
+}
